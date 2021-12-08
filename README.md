@@ -120,6 +120,13 @@ will upload the locale state of branch dev to the remote (origin).
 ```shell
 git checkout my-branch-name
 ```
+
+## remove git tracking from a folder
+from inside the folder:
+```shell
+rm -rf .git // Remove git tracking
+```
+
 ## Sources:
 - https://www.atlassian.com/git/tutorials/setting-up-a-repository
 - git stash: https://www.atlassian.com/git/tutorials/saving-changes/git-stash
