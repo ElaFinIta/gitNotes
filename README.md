@@ -58,6 +58,8 @@ is equivalent to:
 git fetch origin HEAD **and** git merge HEAD
 where HEAD is ref pointing to the current branch.
 
+git pull will NOT remove your local untracked files
+
 ## git add
 Add a single file:
 ```shell
