@@ -124,10 +124,11 @@ git checkout my-branch-name
 ```
 
 ## remove git tracking from a folder
-from inside the folder:
+from inside the folder: BE CAREFUL! This command will recursively remove all files from the specified folder!
 ```shell
 rm -rf .git // Remove git tracking
 ```
+
 
 ## Sources:
 - https://www.atlassian.com/git/tutorials/setting-up-a-repository
