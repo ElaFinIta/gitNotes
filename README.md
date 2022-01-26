@@ -129,6 +129,12 @@ from inside the folder: BE CAREFUL! This command will recursively remove all fil
 rm -rf .git // Remove git tracking
 ```
 
+## insert commit message in editor:
+- press "i" (i for insert)
+- write your merge message
+- press "esc" (escape)
+- write ":wq" (write & quit)
+- then press enter
 
 ## Sources:
 - https://www.atlassian.com/git/tutorials/setting-up-a-repository
