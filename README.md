@@ -136,6 +136,9 @@ rm -rf .git // Remove git tracking
 - write ":wq" (write & quit)
 - then press enter
 
+### About ignoring files in `.gitignore`:
+https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
 ## Sources:
 - https://www.atlassian.com/git/tutorials/setting-up-a-repository
 - git stash: https://www.atlassian.com/git/tutorials/saving-changes/git-stash
