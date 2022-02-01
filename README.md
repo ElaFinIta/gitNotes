@@ -109,6 +109,22 @@ Switch to a Branch In Your Local Repo
 git checkout my-branch-name
 ```
 
+### Rename a local branch:
+```shell
+git branch -m old-name new-name
+```
+
+### Rename a remote branch:
+1.  overwrite the remote branch
+```shell
+git push origin :old-name new-name
+```
+
+### Delete the branch with the old name on the remote repository
+```sh
+git push origin --delete old-name
+```
+
 ## git push
 Upload the local state of ＜branch-name＞ to the remote repository specified by ＜remote-name＞.
 ```shell
