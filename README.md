@@ -83,7 +83,7 @@ branch name...
 git rebase <base>
 ```
 
-## branches
+## branches (only commits/pushes to default branch are counted as contributions)
 See what branch you are in:
 ```shell
 git branch
