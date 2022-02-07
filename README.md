@@ -152,6 +152,11 @@ rm -rf .git // Remove git tracking
 - write ":wq" (write & quit)
 - then press enter
 
+## To change the URL for a remote Git repository (ex. cloned repo):
+```shell
+git remote set-url origin new_git_url_here
+```
+
 ### About ignoring files in `.gitignore`:
 https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
