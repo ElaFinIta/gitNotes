@@ -125,6 +125,18 @@ git push origin :old-name new-name
 git push origin --delete old-name
 ```
 
+
+### Delete a local branch 
+```sh
+git branch -d <local-branch>
+```
+
+or if the branch is not fully merged:
+```sh
+git branch -D <local-branch>
+```
+
+
 ## git push
 Upload the local state of ＜branch-name＞ to the remote repository specified by ＜remote-name＞.
 ```shell
