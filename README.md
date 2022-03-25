@@ -76,6 +76,55 @@ List of commits:
 git log
 ```
 
+## squash commits
+Combines commits, rewrites history. Before pushing and merging into main, to clean up all the commits into one commit about a feature
+
+```sh
+git rebase -i HEAD~3
+```
+
+where `-i` stands for interactive and `HEAD~3` means starting from HEAD for 3 commits.
+To enter the interactive edit press:
+
+- `i` and replace `pick` in front of the commits you want to squash with `squash` (`fixup` will do the same but discard the commit message associated with the commit). Leave the first `pick`.
+
+
+We are saying that we want to meld the second and third commit into the first one.
+Save and exit interactive mode with:
+
+- esc
+- :wq
+- enter
+
+Now you can refactor the commit message:
+
+- `i` and hash `#`in front of messages you want to omit. Leave one message and possibly modify it.
+
+Save and exit interactive mode with:
+
+- esc
+- :wq
+- enter
+
+Now you can push the squashed commits.
+
+Remember that squashing will change the git history. So if you have already pushed the branch to remote then it is not advisable to squash.
+Always squash before you push the changes to remote.
+If we've squashed already pushed commits, and we would like to publish the squashed result, we have to do a force push (git push -f).
+
+## Using squash when merging the branch
+
+When we are ready to merge changes of a feature branch into the main branch:
+
+```sh
+git merge --squash target_branch_name
+```
+
+This command will take all the commits from the target branch, squash them, and stage all changes in the current branch. Then you can commit all the changes in a single commit.
+
+
+**or just use GitHub SQUASH AND COMMIT button when merging a branch into main.**
+
 ## git rebase
 Rebase the current branch onto <base>. <base> can be a commit ID,
 branch name...
