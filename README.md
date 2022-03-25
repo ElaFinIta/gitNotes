@@ -123,7 +123,7 @@ git merge --squash target_branch_name
 This command will take all the commits from the target branch, squash them, and stage all changes in the current branch. Then you can commit all the changes in a single commit.
 
 
-**or just use GitHub SQUASH AND COMMIT button when merging a branch into main.**
+**or just use GitHub SQUASH AND MERGE button when merging a branch into main.**
 
 ## git rebase
 Rebase the current branch onto <base>. <base> can be a commit ID,
