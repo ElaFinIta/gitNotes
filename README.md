@@ -1,5 +1,9 @@
 # Git commands
 
+# git fetch
+`git fetch && git checkout branch_name`
+fetch a remote branch, create it locally and checkout on the branch
+
 ## git stash
 I used this to pull from main after I made some local changes on my branch (otherwise conflicts).
 ```shell
