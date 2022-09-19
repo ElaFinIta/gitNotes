@@ -1,5 +1,15 @@
 # Git commands
 
+# git revert vs git reset
+
+Git revert doesnt rewrite history. Makes _new_ commits.
+
+`git revert commitNumber`
+
+See commits:
+
+`git log --oneline`
+
 # git fetch
 `git fetch && git checkout branch_name`
 fetch a remote branch, create it locally and checkout on the branch
