@@ -32,6 +32,9 @@ To stash also your untracked files:
 ```shell
 git stash -u
 ```
+
+Please not that `git stash --all` instead will stash also ignored files such .env files, making you very confused 
+
 To see the stash list:
 ```
 git stash list
